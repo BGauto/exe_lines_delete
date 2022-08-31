@@ -14,6 +14,6 @@
     'depends': ['base','sale'],
 
     'data': [
-        'views/views.xml',
+        'views/sale_order_lines_custom.xml',
     ],
 }

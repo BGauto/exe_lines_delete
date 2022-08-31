@@ -1,0 +1,24 @@
+<odoo>
+  <data>
+
+    <record model="ir.ui.view" id="exe_sale_order_button_custom">
+      <field name="name">sale.order.button.form.custom</field>
+      <field name="model">sale.order</field>
+      <field name="inherit_id" ref="sale.view_order_form"/>
+      <field name="arch" type="xml">
+
+        <xpath expr="//page[1]/field[1][@name='order_line']" position="before">
+          <button
+            name="action_clear"
+            class="oe_highlight"
+            string="Lines delete"
+            icon="fa-minus-circle"
+            type="object"
+          />
+        
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>
